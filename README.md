@@ -31,7 +31,8 @@ First step of the installation will create a LoadBalancer for your cluster, you 
 Access the application:
 
 `http://<External-IP>/example-proxy`
-`http://<External-IP>/metrics [zoover:devops]`
+
+`http://<External-IP>/metrics` [zoover:devops]
 
 (https requests might throw an error due to certificate reasons however you can still proceed or provide your own)
 

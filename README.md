@@ -20,7 +20,7 @@ Apply the following steps in order:
 
 `kubectl apply -f prometheus-operator/bundle.yaml`
 
-`kubectl create -f prometheus-operator/exporter-service.yaml -f prometheus-operator/servicemonitor.yaml -f prometheus-operator/prometheus-rbac.yaml -f prometheus.yaml -f prometheus-frontend.yaml`
+`kubectl create -f prometheus-operator/exporter-service.yaml -f prometheus-operator/servicemonitor.yaml -f prometheus-operator/prometheus-rbac.yaml -f prometheus-operator/prometheus.yaml -f prometheus-operator/prometheus-frontend.yaml`
 
 ### USAGE
 
@@ -34,7 +34,7 @@ Access the application:
 
 `http://<External-IP>/metrics` [zoover:devops]
 
-(https requests might throw an error due to certificate reasons however you can still proceed or provide your own)
+(https requests might throw an error due to certificate reasons however you can still proceed or provide your own cert)
 
 Access the Prometheus UI:
 

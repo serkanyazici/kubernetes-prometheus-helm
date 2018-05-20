@@ -1,4 +1,4 @@
-# KUBERNETES PROMETHEUS-OPERATOR HELM
+## KUBERNETES PROMETHEUS HELM
 
 This repository aims to deploy an application by Helm using Google Container Engine and collect the application metrics by Prometheus. HAProxy (1.8) is used as application with a little hack. You can check application configuration within docker folder.
 

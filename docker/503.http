@@ -1,0 +1,13 @@
+HTTP/1.0 200 Found
+Cache-Control: no-cache
+Connection: close
+Content-Type: text/html
+
+<html>
+<head>
+<title>Zoover Demo</title>
+</head>
+<body>
+<p>This is a simple content made by Serkan Yazici</p>
+</body>
+</html>

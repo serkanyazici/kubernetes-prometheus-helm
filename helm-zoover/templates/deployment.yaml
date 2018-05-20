@@ -1,0 +1,25 @@
+kind: Deployment
+apiVersion: extensions/v1beta1
+metadata:
+  name: haproxy-deployment
+spec:
+  replicas: {{.Values.scale}}
+  template:
+    metadata:
+      labels:
+        app: web-frontend
+    spec:
+      containers:
+      - name: web-container
+        image: waidmannsheil/haproxy:{{.Values.tag}}
+        ports:
+        - name: static-content
+          containerPort: 80
+        - name: metrics
+          containerPort: 9000
+      - name: haproxy-exporter
+        image: quay.io/prometheus/haproxy-exporter:v0.9.0
+        ports:
+        - name: exporter-port
+          containerPort: 9101
+        args: ["--haproxy.scrape-uri=http://zoover:devops@127.0.0.1:9000/metrics?stats;csv"] 

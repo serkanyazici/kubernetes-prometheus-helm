@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: exporter-service
+  labels:
+    app: exporter-app
+spec:
+  selector:
+    app: web-frontend
+  ports:
+  - name: exporter
+    port: 9101

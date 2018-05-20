@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: haproxy-app
+spec:
+  selector:
+    app: web-frontend
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
+    - name: tcp
+      port: 9000
+      targetPort: 9000

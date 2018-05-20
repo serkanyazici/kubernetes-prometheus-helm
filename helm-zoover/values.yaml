@@ -1,0 +1,4 @@
+scale: 2
+tag: "latest"
+proxy: "/example-proxy"
+stat: "/metrics"
